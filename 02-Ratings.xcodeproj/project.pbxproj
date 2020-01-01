@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		455466F323BB7568005D6DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455466F223BB7568005D6DE3 /* AppDelegate.swift */; };
 		455466F523BB7568005D6DE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455466F423BB7568005D6DE3 /* SceneDelegate.swift */; };
-		455466F723BB7568005D6DE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455466F623BB7568005D6DE3 /* ContentView.swift */; };
+		455466F723BB7568005D6DE3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455466F623BB7568005D6DE3 /* RatingView.swift */; };
 		455466F923BB756C005D6DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455466F823BB756C005D6DE3 /* Assets.xcassets */; };
 		455466FC23BB756C005D6DE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455466FB23BB756C005D6DE3 /* Preview Assets.xcassets */; };
 		455466FF23BB756C005D6DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455466FD23BB756C005D6DE3 /* LaunchScreen.storyboard */; };
+		4554670723BB9D78005D6DE3 /* Videogame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554670623BB9D78005D6DE3 /* Videogame.swift */; };
+		4554670923BB9DD5005D6DE3 /* VideogamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554670823BB9DD5005D6DE3 /* VideogamesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		455466EF23BB7568005D6DE3 /* 02-Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-Ratings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		455466F223BB7568005D6DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455466F423BB7568005D6DE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		455466F623BB7568005D6DE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		455466F623BB7568005D6DE3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		455466F823BB756C005D6DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455466FB23BB756C005D6DE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		455466FE23BB756C005D6DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4554670023BB756C005D6DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4554670623BB9D78005D6DE3 /* Videogame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videogame.swift; sourceTree = "<group>"; };
+		4554670823BB9DD5005D6DE3 /* VideogamesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideogamesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,10 @@
 		455466F123BB7568005D6DE3 /* 02-Ratings */ = {
 			isa = PBXGroup;
 			children = (
-				455466F223BB7568005D6DE3 /* AppDelegate.swift */,
-				455466F423BB7568005D6DE3 /* SceneDelegate.swift */,
-				455466F623BB7568005D6DE3 /* ContentView.swift */,
-				455466F823BB756C005D6DE3 /* Assets.xcassets */,
-				455466FD23BB756C005D6DE3 /* LaunchScreen.storyboard */,
-				4554670023BB756C005D6DE3 /* Info.plist */,
+				4591D25523BCF9710062ECF4 /* Model */,
+				4591D25423BCF9550062ECF4 /* Views */,
 				455466FA23BB756C005D6DE3 /* Preview Content */,
+				4591D25623BCF9890062ECF4 /* SupportingFiles */,
 			);
 			path = "02-Ratings";
 			sourceTree = "<group>";
@@ -73,6 +74,35 @@
 				455466FB23BB756C005D6DE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4591D25423BCF9550062ECF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				455466F623BB7568005D6DE3 /* RatingView.swift */,
+				4554670823BB9DD5005D6DE3 /* VideogamesList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4591D25523BCF9710062ECF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4554670623BB9D78005D6DE3 /* Videogame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4591D25623BCF9890062ECF4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				455466F223BB7568005D6DE3 /* AppDelegate.swift */,
+				455466F423BB7568005D6DE3 /* SceneDelegate.swift */,
+				455466F823BB756C005D6DE3 /* Assets.xcassets */,
+				455466FD23BB756C005D6DE3 /* LaunchScreen.storyboard */,
+				4554670023BB756C005D6DE3 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				455466F323BB7568005D6DE3 /* AppDelegate.swift in Sources */,
+				4554670923BB9DD5005D6DE3 /* VideogamesList.swift in Sources */,
 				455466F523BB7568005D6DE3 /* SceneDelegate.swift in Sources */,
-				455466F723BB7568005D6DE3 /* ContentView.swift in Sources */,
+				455466F723BB7568005D6DE3 /* RatingView.swift in Sources */,
+				4554670723BB9D78005D6DE3 /* Videogame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"02-Ratings/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "02-Ratings/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/02-Ratings/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"02-Ratings/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "02-Ratings/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/02-Ratings/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
