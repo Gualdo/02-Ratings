@@ -27,7 +27,7 @@ struct VideogamesList: View {
                         Text(videogame.title)
                     }
                 }
-            }.sheet(isPresented: $isPresented) {
+            }.navigationBarTitle("Your Games").sheet(isPresented: $isPresented) {
                 RatingView(vgStore: self.vgStore, videogame: Videogame())
             }
         }
