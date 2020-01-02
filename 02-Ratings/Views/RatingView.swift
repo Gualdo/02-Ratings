@@ -66,7 +66,7 @@ struct RatingView: View {
                     }
                 }
             }
-        }.listStyle(GroupedListStyle())
+            }.listStyle(GroupedListStyle()).navigationBarTitle("Game Detail")
     }
 }
 
